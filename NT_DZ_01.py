@@ -6,7 +6,6 @@ class Student:
         name (str): The name of the person.
         surname (str): The surname of the person.
         gender (str): The gender of the person ('male' or 'female').
-
     Returns:
         None
     """
@@ -50,6 +49,16 @@ class Student:
 
 
 class Mentor:
+    """
+    Initializes the object with the given name and surname.
+
+    Parameters:
+        name (str): The name of the person.
+        surname (str): The surname of the person.
+
+    Returns:
+        None
+    """
     def __init__(self, name, surname):
         self.name = name
         self.surname = surname
@@ -124,7 +133,7 @@ lecturer2.courses_attached += ['Git']
 # Создание экземпляров проверяющих
 reviewer1 = Reviewer('John', 'Konnor')
 reviewer1.courses_attached += ['Python']
-reviewer2 = Reviewer('Sara', 'Konnor')
+reviewer2 = Reviewer('James', 'Bond')
 reviewer2.courses_attached += ['Git']
 
 # Выставление оценок студентам
@@ -142,7 +151,7 @@ student2.rate_lecturer(lecturer1, 'Git', 9)
 # Вывод информации о студентах, лекторах и проверяющих
 print(f'________\nСТУДЕНТЫ:\n\n{student1}\n\n{student2}')
 print(f'\n________\nЛЕКТОРЫ:\n\n{lecturer1}\n\n{lecturer2}')
-print(f'\n________\nПРОВЕРЯЮЩИЕ:\n\n{reviewer1}\n\n{reviewer2}')
+print(f'\n________\nПРОВЕРЯЮЩИЕ:\n\n{reviewer1}\n\n{reviewer2}\n')
 
 
 # Сравнение лекторов и студентов (Зачем? Чтобы что?)
