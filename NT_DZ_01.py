@@ -155,9 +155,20 @@ print(f'\n________\nПРОВЕРЯЮЩИЕ:\n\n{reviewer1}\n\n{reviewer2}\n')
 
 
 # Сравнение лекторов и студентов (Зачем? Чтобы что?)
-print(lecturer1 > lecturer2)
-print(student1 < student2)
+if lecturer1 > lecturer2:
+    print(f'Лектор {lecturer1.name} {lecturer1.surname} по баллам лучше лектора {lecturer2.name} {lecturer2.surname}')
+else:
+    print(f'Лектор {lecturer1.name} {lecturer1.surname} не лучше лектора {lecturer2.name} {lecturer2.surname}')
+
+if student1 > student2:
+    print(f'Студент {student1.name} {student1.surname} по баллам лучше студента {student2.name} {student2.surname}')
+else:
+    print(f'Студент {student1.name} {student1.surname} не лучше студента {student2.name} {student2.surname}\n')
+
+# print(lecturer1 > lecturer2)
+# print(student1 < student2)
 
 # Вывод средних оценок
+print('Средние оценки:')
 print(average_grade_for_students([student1, student2], 'Python'))
 print(average_grade_for_lecturers([lecturer1, lecturer2], 'Git'))
