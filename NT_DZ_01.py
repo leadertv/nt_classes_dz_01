@@ -1,4 +1,15 @@
 class Student:
+    """
+    Initializes the object with the provided name, surname, and gender.
+
+    Parameters:
+        name (str): The name of the person.
+        surname (str): The surname of the person.
+        gender (str): The gender of the person ('male' or 'female').
+
+    Returns:
+        None
+    """
     def __init__(self, name, surname, gender):
         self.name = name
         self.surname = surname
