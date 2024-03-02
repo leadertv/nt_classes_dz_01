@@ -137,7 +137,7 @@ reviewer2 = Reviewer('James', 'Bond')
 reviewer2.courses_attached += ['Git']
 
 # Выставление оценок студентам
-reviewer1.rate_hw(student1, 'Python', 9)
+reviewer1.rate_hw(student1, 'Python', 8)
 reviewer1.rate_hw(student2, 'Python', 10)
 reviewer2.rate_hw(student1, 'Git', 8)
 reviewer2.rate_hw(student2, 'Git', 7)
