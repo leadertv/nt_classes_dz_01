@@ -165,6 +165,7 @@ if student1 > student2:
 else:
     print(f'Студент {student1.name} {student1.surname} не лучше студента {student2.name} {student2.surname}\n')
 
+# Первоначальный вариант.
 # print(lecturer1 > lecturer2)
 # print(student1 < student2)
 
